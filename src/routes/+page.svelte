@@ -9,6 +9,14 @@
       showIframe = true;
     }, 100);
   }
+
+  function fetchJs() {
+    fetch("http://ext.localhost/main.js")
+      .then((res) => res.text())
+      .then((text) => {
+        console.log(text);
+      });
+  }
 </script>
 
 <span>{iframeSrc}</span>
@@ -16,3 +24,4 @@
   <iframe src={iframeSrc} title="iframe" width="100%"></iframe>
 {/if}
 <button on:click={reloadIframe}>Reload</button>
+<button on:click={fetchJs}>fetch http://ext.localhost/main.js</button>
