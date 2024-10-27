@@ -13,6 +13,6 @@
 
 <span>{iframeSrc}</span>
 {#if showIframe}
-  <iframe src={iframeSrc} title="iframe" width="100%" height="400"></iframe>
+  <iframe src={iframeSrc} title="iframe" width="100%"></iframe>
 {/if}
 <button on:click={reloadIframe}>Reload</button>
