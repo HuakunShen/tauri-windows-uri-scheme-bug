@@ -1,0 +1,8 @@
+{
+  "svelte.enable-ts-plugin": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#451268",
+    "titleBar.activeBackground": "#601991",
+    "titleBar.activeForeground": "#FDFCFE"
+  }
+}
